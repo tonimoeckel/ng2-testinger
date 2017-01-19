@@ -1,0 +1,26 @@
+<div class="ng2-responsive-tabbar">
+  <div class="tabs"
+    [ngStyle]="{'padding-right': toolWidth + toolMargin+ 'px'}"
+  >
+    <div class="scroll-wrapper">
+      <ul class="nav navbar-nav">
+        <li *ngFor="let item of tabs"><a>{{item.title}}</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <ul class="tabbar-tools">
+    <li class="dropdown" dropdown>
+      <a id="single-button" type="button" class="" dropdownToggle>
+        <span class="caret"></span>
+      </a>
+      <ul dropdownMenu role="menu" aria-labelledby="single-button">
+        <li role="menuitem"><a class="dropdown-item" href="#">Action</a></li>
+        <li role="menuitem"><a class="dropdown-item" href="#">Another action</a></li>
+        <li role="menuitem"><a class="dropdown-item" href="#">Something else here</a></li>
+        <li class="divider dropdown-divider"></li>
+        <li role="menuitem"><a class="dropdown-item" href="#">Separated link</a></li>
+      </ul>
+    </li>
+  </ul>
+</div>
